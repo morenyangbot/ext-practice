@@ -1,0 +1,91 @@
+.view-point {
+    background-image: url("https://cn.bing.com/th?id=OHR.HornedAnole_EN-CN4355061559_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.search-bar-wrapper {
+    overflow: visible;
+}
+
+.search-bar-tabs {
+    width: 100%;
+    top: 0 !important;
+}
+
+.search-bar-tabs-header {
+    display: flex;
+    position: relative;
+    bottom: -1px;
+    z-index: 2;
+}
+
+.search-bar-tabs-header .x-tab-strip-top {
+    background: transparent;
+    width: 100%;
+    border-bottom: none;
+}
+
+.search-bar-tabs-header .x-tab-strip-top li {
+    height: 26px;
+    padding: 5px 7px 5px 17px;
+    margin: 0;
+    background: rgba(255, 255, 255, .8);
+    display: block;
+    position: relative;
+    border-radius: 2px 2px 0 0;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+.search-bar-tabs-header .x-tab-strip-top li:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: block;
+    border-top: 36px solid transparent;
+    border-left: 10px solid rgba(255, 255, 255, .8);
+}
+
+.search-bar-tabs-header .x-tab-strip-top li.x-tab-strip-active {
+    background: #FFF;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.search-bar-tabs-header .x-tab-strip-top li.x-tab-strip-active:after {
+    border-left-color: #FFF;
+}
+
+.search-bar-tabs-header .x-tab-strip-top li + li {
+    margin-left: 5px;
+}
+
+.search-bar-tabs-header span.x-tab-strip-text {
+    font-size: 16px;
+    color: #010101;
+}
+
+.search-bar-tabs-header .x-tab-strip-active span.x-tab-strip-text {
+    font-weight: 400;
+}
+
+.search-bar-tabs-header .x-tab-right,
+.search-bar-tabs-header .x-tab-left,
+.search-bar-tabs-header .x-tab-strip-inner {
+    background: transparent;
+}
+
+.search-bar-tabs-body .x-panel-body {
+    background: transparent;
+}
+
+.search-bar-tabs-body .x-panel-bwrap,
+.search-bar-tabs-body .x-panel-body,
+.search-bar-container,
+.search-bar-container .x-box-inner {
+    overflow: visible;
+}
+
