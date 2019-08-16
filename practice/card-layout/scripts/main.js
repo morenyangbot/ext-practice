@@ -2,7 +2,6 @@ Ext.onReady(function () {
 
   const questionForm1RadioGroup = new Ext.form.RadioGroup({
     id: 'question1',
-    height: 100,
     columns: 1,
     msgTarget: 'under',
     items:
@@ -42,7 +41,6 @@ Ext.onReady(function () {
   const questionForm2CheckboxGroup = new Ext.form.CheckboxGroup({
     name: 'question2',
     msgTarget: 'under',
-    height: 100,
     columns: 1,
     items:
       [{
@@ -74,7 +72,6 @@ Ext.onReady(function () {
 
   const resultForm1RadioGroup = new Ext.form.RadioGroup({
     id: 'result1',
-    height: 100,
     columns: 1,
     msgTarget: 'under',
     disabled: true,
@@ -102,7 +99,7 @@ Ext.onReady(function () {
   const resultForm2CheckboxGroup = new Ext.form.CheckboxGroup({
     name: 'result2',
     msgTarget: 'under',
-    height: 100,
+    // height: 100,
     columns: 1,
     disabled: true,
     fieldLabel: '王大叔出门遛狗后，哪些是正确处理狗粑粑的方法？（多选）',
