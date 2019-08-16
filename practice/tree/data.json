@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Fruits",
+    "children": [
+      {
+        "checked": false,
+        "text": "Apple🍎",
+        "leaf": true
+      },
+      {
+        "checked": false,
+        "text": "Grapes🍇",
+        "leaf": true
+      },
+      {
+        "checked": false,
+        "text": "Pear🍐",
+        "leaf": true
+      },
+      {
+        "checked": false,
+        "text": "Strawberry🍓",
+        "leaf": true
+      },
+      {
+        "checked": false,
+        "text": "Watermelon🍉",
+        "leaf": true
+      }
+    ]
+  },
+  {
+    "text": "Vegetables",
+    "children": [
+      {
+        "checked": false,
+        "text": "Tomato🍅",
+        "leaf": true
+      }
+    ]
+  }
+]

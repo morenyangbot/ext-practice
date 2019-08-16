@@ -265,13 +265,15 @@ Ext.onReady(function () {
     fieldLabel: 'Birthday',
     msgTarget: 'under',
     emptyText: 'Please input your birthday',
-    width: 300
+    width: 300,
+    anchor: '-10'
   })
 
   const readerFormComboBox = new Ext.form.ComboBox({
     id: 'rcombobox',
     fieldLabel: 'ComboBox',
     mode: 'local',
+    anchor: '-10',
     store: new Ext.data.ArrayStore({
       id: 0,
       fields: ['id', 'name'],
@@ -305,14 +307,17 @@ Ext.onReady(function () {
     labelWidth: 100,
     frame: true,
     reader: readerFormReader,
+    anchorSize: {width: 800, height: 500},
     items: [
       {
         fieldLabel: 'Text',
-        id: 'rtext'
+        id: 'rtext',
+        anchor: '-10'
       },
       {
         fieldLabel: 'number',
-        id: 'rnumber'
+        id: 'rnumber',
+        anchor: '-10'
       },
       readerFormDateField,
       readerFormComboBox

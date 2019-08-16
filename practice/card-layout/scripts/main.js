@@ -28,14 +28,10 @@ Ext.onReady(function () {
     id: 'questionForm1',
     frame: true,
     labelWidth: 0,
-    title: '番茄酱属于以下哪种垃圾（单选）',
+    title: '🍅番茄酱属于以下哪种垃圾（单选）',
     items: [
       questionForm1RadioGroup
     ],
-  })
-
-  questionForm1RadioGroup.on('change', function (group, item) {
-    console.log(item.inputValue)
   })
 
   const questionForm2CheckboxGroup = new Ext.form.CheckboxGroup({
@@ -66,7 +62,7 @@ Ext.onReady(function () {
     id: 'questionForm2',
     frame: true,
     labelWidth: 0,
-    title: '王大叔出门遛狗后，哪些是正确处理狗粑粑的方法？（多选）',
+    title: '王大叔出门遛狗🐕后，哪些是正确处理狗粑粑💩的方法？（多选）',
     items: [questionForm2CheckboxGroup]
   })
 
@@ -75,7 +71,7 @@ Ext.onReady(function () {
     columns: 1,
     msgTarget: 'under',
     disabled: true,
-    fieldLabel: '番茄酱属于以下哪种垃圾（单选）',
+    fieldLabel: '🍅番茄酱属于以下哪种垃圾（单选）',
     items:
       [{
         name: 'result1',
@@ -102,7 +98,7 @@ Ext.onReady(function () {
     // height: 100,
     columns: 1,
     disabled: true,
-    fieldLabel: '王大叔出门遛狗后，哪些是正确处理狗粑粑的方法？（多选）',
+    fieldLabel: '王大叔出门遛狗🐕后，哪些是正确处理狗粑粑💩的方法？（多选）',
     items:
       [{
         name: 'cb1',
@@ -175,7 +171,6 @@ Ext.onReady(function () {
     activeItem: 0,
     title: '调查问卷',
     defaults: {
-      // applied to each contained panel
       border: false
     },
     bbar: [

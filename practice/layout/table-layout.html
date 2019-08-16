@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bing</title>
+    <link rel="stylesheet" href="../../ext-3.3.0/resources/css/ext-all.css">
+  </head>
+  <body>
+    <script src="../../ext-3.3.0/adapter/ext/ext-base-debug.js"></script>
+    <script src="../../ext-3.3.0/ext-all-debug.js"></script>
+    <script>
+
+
+      Ext.onReady(function () {
+
+        const tableLayoutContainer = new Ext.Panel({
+          layout: 'table',
+          width: 500,
+          height: 500,
+          layoutConfig: {
+            columns: 4
+          },
+          defaults: {
+            bodyStyle: 'padding: 20px'
+          },
+          items: [
+            {
+              colspan: 4,
+              height: 100,
+              width: 200,
+              html: '<p>A</p>'
+            }, {
+              colspan: 2,
+              width: 100,
+              height: 50,
+              html: '<p>B</p>'
+            }, {
+              colspan: 2,
+              width: 100,
+              height: 50,
+              html: '<p>C</p>'
+            }, {
+              rowspan:3,
+              colspan: 2,
+              height: 150,
+              html: '<p>D</p>'
+            }, {
+              colspan: 2,
+              height: 50,
+              width: 100,
+
+              html: '<p>E</p>'
+            }, {
+              colspan: 1,
+              height: 50,
+              width: 50,
+
+              html: '<p>F</p>'
+            }, {
+              colspan: 1,
+              height: 50,
+              width: 50,
+              html: '<p>G</p>'
+            }, {
+              colspan: 2,
+              height: 50,
+              width: 100,
+              html: '<p>H</p>'
+            },
+          ]
+        })
+
+        const viewport = new Ext.Viewport({
+
+          items: [tableLayoutContainer]
+        });
+      })
+    </script>
+  </body>
+</html>

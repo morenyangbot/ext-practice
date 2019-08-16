@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bing</title>
+    <link rel="stylesheet" href="../../ext-3.3.0/resources/css/ext-all.css">
+  </head>
+  <body>
+    <script src="../../ext-3.3.0/adapter/ext/ext-base-debug.js"></script>
+    <script src="../../ext-3.3.0/ext-all-debug.js"></script>
+    <script>
+
+
+      Ext.onReady(function () {
+
+        const hboxLaytouContainer = new Ext.Panel({
+          // 主轴横向
+          // direction : row
+          layout: 'hbox',
+          width: 500,
+          height: 100,
+          layoutConfig: {
+            // 主轴对齐 justify-content
+            pack: 'center',
+            // 交叉轴对齐 align-items
+            align: 'middle',
+          },
+          items: [
+            {
+              // flex 等价于 flex-grow
+              flex: 1,
+              html: '<p>A<br>A</p>'
+            }, {
+              html: '<p>B</p>'
+            }, {
+              width: 100,
+              html: '<p>C</p>'
+            }, {
+              html: '<p>D</p>'
+            }, {
+              html: '<p>E</p>'
+            }, {
+              html: '<p>F</p>'
+            }, {
+              html: '<p>G</p>'
+            },
+          ]
+        })
+
+
+        const vboxLaytouContainer = new Ext.Panel({
+
+          // 主轴纵向
+          layout: 'vbox',
+          width: 500,
+          height: 300,
+          layoutConfig: {
+            // 主轴对齐
+            pack: 'start',
+            // 交叉轴对齐
+            align: 'center',
+          },
+          items: [
+            {
+              // flex: 1,
+              html: '<p>A<br>A</p>'
+            }, {
+              // flex: 2,
+              html: '<p>B</p>'
+            }, {
+              width: 100,
+              html: '<p>C</p>'
+            }, {
+              html: '<p>D</p>'
+            }, {
+              html: '<p>E</p>'
+            }, {
+              html: '<p>F</p>'
+            }, {
+              html: '<p>G</p>'
+            },
+          ]
+        })
+
+        const viewport = new Ext.Viewport({
+
+          items: [hboxLaytouContainer, vboxLaytouContainer]
+        });
+      })
+    </script>
+  </body>
+</html>
