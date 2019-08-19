@@ -112,7 +112,6 @@ Ext.onReady(function () {
   const asyncTreeEditor = new Ext.tree.TreeEditor(asyncTree, {allowBlank: false}, {
     listeners: {
       complete: function (editor, currentVal, originVal) {
-        console.log(editor)
         if (currentVal.includes("Zh")) {
           editor.editNode.ui.textNode.style = "color: red"
         } else {
